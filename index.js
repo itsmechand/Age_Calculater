@@ -2,12 +2,12 @@ var x = document.getElementById("hands");
 var y = document.getElementById("animcon");
 
 function closeye() {
-    y.style.backgroundImage = "url('https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/monkey_pwd.gif')";
+    y.style.backgroundImage = "url('background_img.png')";
     x.style.marginTop = "0%";
 }
 
 function openeye() {
-    y.style.backgroundImage = "url('https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/monkey.gif')";
+    y.style.backgroundImage = "url('background_img.png')";
     x.style.marginTop = "110%";
 }
 
@@ -17,7 +17,7 @@ function calculateAge() {
     var today = new Date();
 
     if (!birthDateInput || birthDate > today) {
-        alert("Please enter a valid birth date.");
+        alert("Please Enter a Valid Birth Date.");
         return false; 
     }
 
@@ -29,8 +29,8 @@ function calculateAge() {
     }
 
     var resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<strong>Your age is: ${age} years.</strong>`;
-    y.style.backgroundImage = "url('https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/monkey_age.gif')";
+    resultDiv.innerHTML = `<strong>Your Age is: ${age} Years</strong>`;
+    y.style.backgroundImage = "url('background_img.png')";
     
     return false; 
 }
