@@ -2,12 +2,12 @@ const animcon = document.getElementById("animcon");
 const hands = document.getElementById("hands");
 
 function closeye() {
-    animcon.style.backgroundImage = "url('https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/monkey_pwd.gif')";
+    animcon.style.backgroundImage = "url('background_img.png')";
     hands.style.bottom = "0%";
 }
 
 function openeye() {
-    animcon.style.backgroundImage = "url('https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/monkey.gif')";
+    animcon.style.backgroundImage = "url('background_img.png')";
     hands.style.bottom = "-70%";
 }
 
@@ -16,7 +16,7 @@ function calculateAge() {
     const resultDiv = document.getElementById('result');
     
     if (!birthDateInput) {
-        alert("Please enter your birth date");
+        alert("Please Enter Your Birth Date");
         return;
     }
 
@@ -24,7 +24,7 @@ function calculateAge() {
     const today = new Date();
 
     if (birthDate > today) {
-        alert("Birth date cannot be in the future!");
+        alert("Birth Date Cannot be in the Future!");
         return;
     }
 
@@ -35,7 +35,7 @@ function calculateAge() {
         age--;
     }
 
-    resultDiv.innerHTML = `Your age is ${age} years old`;
+    resultDiv.innerHTML = `Your Age is ${age} Years Old`;
     
     openeye();
 }
