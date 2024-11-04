@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Age Calculator</h1>
+        <div class="animcon" id="animcon">
+            <img id="hands" src="https://raw.githubusercontent.com/naaficodes/Monkey-Login/master/images/hands.png" />
+        </div>
+        <div class="container">
+            <p>Enter your date of birth</p>
+            <input type="date" id="birthDate" name="birthDate" onfocus="closeye()" onblur="openeye()" />
+            <button onclick="calculateAge()">Calculate Age</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made with ❤️ by CHUNDURI SAI SRINIVAS</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
